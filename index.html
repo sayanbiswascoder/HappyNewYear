@@ -7,43 +7,69 @@
     <title>New Year Countdown</title>
 </head>
 <style>
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #00263b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-}
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Pacifico');
 
-.countdown-container {
-    text-align: center;
-    color: #fff;
+*, *:after, *:before{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
 }
-
-#countdown {
-    font-size: 3em;
-    color: #ffbb00;
-    animation: fadeIn 1s ease-in-out;
+html{
+	background: #222048;
 }
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.feliz{
+  width: 100%;
+  font-family: 'Pacifico', cursive;
+  font-size: 100px;
+  font-weight: 700;
+  color: #f48fb1;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  animation: vem_feliz 2s ease-in-out 7s forwards;
 }
+.ano_novo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 
 </style>
 <body>
-    <div class="countdown-container">
-        <h1 id="countdown"></h1>
-    </div>
+    <div class="feliz">Happy new year</div>
+<div class="ano_novo">
+  <span>202</span>
+  <span class="seis">3</span>
+  <span class="sete">4</span>
+  <div class="balao"></div>
+</div>
+<div class="fogos">
+  <div class="f1">
+    <span><i></i></span>
+    <span><i></i></span>
+    <span><i></i></span>
+  </div>
+  <div class="f2">
+    <span><i></i></span>
+    <span><i></i></span>
+    <span><i></i></span>
+  </div>
+  <div class="f3">
+    <span><i></i></span>
+    <span><i></i></span>
+    <span><i></i></span>
+  </div>
+  <div class="f4">
+    <span><i></i></span>
+    <span><i></i></span>
+    <span><i></i></span>
+  </div>
+</div>
+<a href="https://twitter.com/cecelabomfim" class="author">Marcela Bomfim</a>
 
-    <script src="script.js"></script>
 </body>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
