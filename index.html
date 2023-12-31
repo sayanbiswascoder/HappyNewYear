@@ -147,7 +147,123 @@ span.sete:before{
   right: 15%;
   top: 70%;
 }
+.fogos>div span{
+  width: 6px;
+  height: 6px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: estoura_fogos 0.5s ease-in-out 9s forwards;
+}
+.fogos>div span:nth-child(1){
+  transform: rotate(0deg);
+}
+.fogos>div span:nth-child(2){
+  transform: rotate(120deg);
+}
+.fogos>div span:nth-child(3){
+  transform: rotate(240deg);
+}
+.fogos>div span:before{
+  content: '';
+  width: 2px;
+  height: 50px;
+  display: block;
+  background: #f5cc06;
+  position: absolute;
+  top: -60px;
+  left: 2px;
+}
+.fogos>div span:after{
+  content: '';
+  width: 2px;
+  height: 50px;
+  display: block;
+  background: #f5cc06;
+  position: absolute;
+  bottom: -60px;
+  left: 2px;
+}
+.fogos>div span i:after{
+  content: '';
+  width: 3px;
+  height: 3px;
+  display: block;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: -15px;
+  right: 10px;
+}
 
+
+@keyframes vem_2017 {
+  0% {
+    right: 0%;
+  }
+  66.6666% {
+    right: 50%;
+    margin-right: -300px;
+  }
+  90% {
+    right: 50%;
+    margin-right: -300px;
+  }
+  100% {
+    right: 50%;
+  }
+}
+
+@keyframes vem_e_vai_balao {
+  0% {
+    right: 0%;
+  }
+  40% {
+    right: 50%;
+    margin-right: -300px;
+  }
+  50% {
+    right: 50%;
+    margin-right: -200px;
+    top: 50%;
+  }
+  100% {
+    top: -100%;
+    right: 50%;
+  }
+}
+
+@keyframes entrega_balao {
+  0% {
+    transform: rotate(-30deg);
+    width: 40px;
+  }
+  100% {
+    transform: rotate(-150deg);
+    width: 70px;
+  }
+}
+@keyframes vai_2016 {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+
+@keyframes vem_feliz {
+  0% {
+    margin-top: 0px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: -200px;;
+    opacity: 1;
+  }
+}
 </style>
 <body>
     <div class="feliz">Happy new year</div>
